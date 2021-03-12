@@ -66,11 +66,12 @@ void setup() {
     }
   };
   /*
-  new Isotopes("U-235" , 0);
+   // Her er en anden henfaldskæde som kan undersøges.
+   new Isotopes("U-235" , 0);
    new Isotopes("th-231", 0);
    new Isotopes("pa-231", 0);
    new Isotopes("ac-227", 0);
-   new Isotopes("th-227", 10E21);
+   new Isotopes("th-227", 0);
    new Isotopes("fr-223", 0);
    new Isotopes("ra-223", 0);
    new Isotopes("rn-219", 0);
@@ -104,7 +105,7 @@ void draw() {
     }
   }
   if (keyPressed) {
-    if (key == 's') {
+    if (key == 's' && started) { //Her kan der kun eksportes hvis simulationen er startet, så isotoper med 's' i deres navn kan adderes.
       export();
     }
   }

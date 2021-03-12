@@ -40,8 +40,7 @@ class Isotopes extends Things {
   }
 
 
-  void step() {
-
+  void step() {// Her udregnes mængde af de forskellige isotoper
     for (Isotopes par : cIso) {
       for (Integer i : par.dest) {
         if (i == this.index) {
@@ -218,6 +217,7 @@ class Isotopes extends Things {
       destPercent.add(1.00);
       break;
       /*
+      //Dette er informationen om den anden henfaldskæde
     case "u-235":
        index = 0;
        halflife = yearstosek(7.03E8);

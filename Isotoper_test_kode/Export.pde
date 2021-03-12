@@ -1,6 +1,6 @@
 
 Table table;
-void export() {
+void export() { //Dette er hvor dataen eksporteres
 
   table = new Table();
   table.addColumn("time");
@@ -26,6 +26,6 @@ void export() {
 
 float tC(int k_) {
   float k = k_;
-  float time = pow(2,k);
+  float time = pow(3,k-10);
   return time;
 }

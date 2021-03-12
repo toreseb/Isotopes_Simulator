@@ -168,25 +168,19 @@ class StartAmount extends Objects {
   }
 
   int keyTimer = 15;
-  int time=0;
+  int keyTime=0;
   void step() {
     if (isChosen) {
-      if (keyPressed && time > keyTimer) {
+      if (keyPressed && keyTime > keyTimer) {
         text = text.substring(0) + key;
-        time = 0;
+        keyTime = 0;
       } else {
-        time++;
+        keyTime++;
       }
     }
   }
-
-
   void reactStarted() {
   }
-
-
-
-
   void drawSelf() {
     if (!isChosen) {
       fill(255);
